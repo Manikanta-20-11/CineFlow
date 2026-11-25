@@ -465,7 +465,6 @@ public class LoginView {
         adminBtn.setOnAction(e -> {
             usernameField.setText("admin");
             passwordField.setText("Admin@123");
-            handleLogin();
         });
 
         Button customerBtn = new Button("Customer Account");
@@ -474,7 +473,6 @@ public class LoginView {
         customerBtn.setOnAction(e -> {
             usernameField.setText("john_doe");
             passwordField.setText("Customer@123");
-            handleLogin();
         });
 
         btnRow.getChildren().addAll(adminBtn, customerBtn);
